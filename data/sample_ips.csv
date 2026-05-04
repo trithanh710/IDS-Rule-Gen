@@ -1,0 +1,11 @@
+ip,description
+192.168.1.10,Cobalt Strike Beacon
+8.8.8.8,DNS Tunneling Malware
+45.33.32.156,Log4j Exploit Attempt
+103.21.244.0,Phishing Campaign Server
+172.16.0.5,Internal Lateral Movement
+185.220.101.1,Tor Exit Node Activity
+91.121.228.53,Mirai Botnet
+13.107.21.200,Suspicious Microsoft Traffic Abuse
+999.999.999.999,Invalid IP Test Case
+abc.def.ghi.jkl,Malformed IP String

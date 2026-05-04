@@ -1,0 +1,32 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.env/
+.env
+
+# Logs
+logs/
+*.log
+
+# Output files (generated rules)
+data/*.rules
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Test cache
+.pytest_cache/
+
+# Build files (nếu sau này đóng gói)
+dist/
+build/
+*.egg-info/
