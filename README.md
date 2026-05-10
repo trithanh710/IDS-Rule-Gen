@@ -1,17 +1,23 @@
 # IDS-Rule-Gen
 
-## 📌 Giới thiệu
+## Giới thiệu
 
-**IDS-Rule-Gen** là một công cụ Python giúp tự động sinh rule cho hệ thống IDS (Suricata) từ danh sách IP độc hại trong file CSV.
+IDS-Rule-Gen là công cụ tự động hóa bảo mật được viết bằng Python, dùng để chuyển đổi Threat Intelligence (danh sách IP độc hại) thành rule cho hệ thống IDS như Suricata và Snort.
 
-Chức năng chính:
+Mục tiêu của dự án là hỗ trợ SOC Analyst hoặc Security Engineer giảm thao tác thủ công khi tạo rule IDS từ IOC (Indicator of Compromise), giúp tăng tốc độ phát hiện mối đe dọa trong hệ thống mạng.
 
-* Lọc IP hợp lệ (IPv4)
-* Sinh rule đúng format Suricata
-* Tự động tăng SID (bắt đầu từ 1000001)
-* Làm sạch description để tránh lỗi rule
-* Có unit test để kiểm tra tính đúng đắn
+---
 
+# Chức năng chính
+
+- Đọc danh sách IP độc hại từ file CSV
+- Kiểm tra IP IPv4 hợp lệ
+- Loại bỏ IP lỗi hoặc trùng lặp
+- Sinh rule đúng định dạng Suricata/Snort
+- Tự động tăng SID cho mỗi rule
+- Làm sạch description để tránh lỗi syntax
+- Xuất file `.rules`
+- Hỗ trợ unit test để kiểm tra tính đúng đắn
 ---
 
 ## ⚙️ Yêu cầu hệ thống
